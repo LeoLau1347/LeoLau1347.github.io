@@ -1,6 +1,5 @@
 ---
 layout: default
-title: My GitHub Blog
 ---
 
 # Welcome to My Blog
