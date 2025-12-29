@@ -1,5 +1,9 @@
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+
+plugins:
+  - jekyll-include-cache
+
+
 title: "L² Open Notes"
 author: "LeoLau1347"
 description: "A personal blog."
-
-remote_theme: "mmistakes/minimal-mistakes@4.27.3"
