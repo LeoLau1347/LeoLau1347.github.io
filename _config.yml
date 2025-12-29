@@ -1,9 +1,4 @@
-remote_theme: pages-themes/minimal@v0.2.0
-
-plugins:
-- jekyll-remote-theme
-
-
 title: "L² Open Notes"
 author: "LeoLau1347"
 description: "A personal blog."
+theme: jekyll-theme-cayman
