@@ -10,7 +10,7 @@ excerpt: |
   Here, ideas don’t just accumulate — they interact.
 
 header:
-  overlay_image: /assets/images/default.png
+  image: /assets/images/default.png
   overlay_filter: 0.35
 
 
