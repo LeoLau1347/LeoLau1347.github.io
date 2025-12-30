@@ -12,7 +12,7 @@ excerpt: |
 
 header:
   overlay_image: /assets/images/cover.png
-  overlay_filter: 0.15
+  overlay_filter: 0.35
 
 
 author_profile: true
