@@ -5,25 +5,26 @@ title: "L² Space"
 header:
   overlay_image: /assets/images/cover.png
   overlay_filter: 0.35
-
-excerpt: "Projects · Tutorials · Technical Notes"
+excerpt: |
+  L² stands for Learning Squared — a space for second-order thinking, exploration, and connected ideas.
+  Here, ideas don’t just accumulate — they interact.
 
 feature_row:
-  - image_path: /assets/images/cover.png
+  - image_path: /assets/images/default.png
     alt: "Projects"
     title: "Projects"
     excerpt: "PIC / Maxwell / simulation projects and showcases."
     url: /projects/
     btn_label: "View Projects"
     btn_class: "btn--primary"
-  - image_path: /assets/images/cover.png
+  - image_path: /assets/images/default.png
     alt: "Tutorials"
     title: "Tutorials"
     excerpt: "Step-by-step guides and reproducible workflows."
     url: /tutorials/
     btn_label: "Read Tutorials"
     btn_class: "btn--primary"
-  - image_path: /assets/images/cover.png
+  - image_path: /assets/images/default.png
     alt: "Notes"
     title: "Notes"
     excerpt: "Short notes, derivations, and ideas."

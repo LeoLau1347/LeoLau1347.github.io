@@ -12,21 +12,21 @@ plugins:
 
 author:
   name: "Leo Lau"
-  avatar: "/assets/imges/avatar.png"
+  avatar: "/assets/images/avatar.png"
   bio: "PhD researcher · Physics · Computation"
 
 
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "defaults"
 search: true
 breadcrumbs: true
 
-# 让 _pages 生效
+
 collections:
   pages:
     output: true
     permalink: /:path/
 
-# 默认布局（文章用 single，页面用 single）
+
 defaults:
   - scope:
       path: ""
@@ -45,5 +45,5 @@ defaults:
       layout: single
       author_profile: true
 
-# 导航
+
 nav: "main"
