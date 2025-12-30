@@ -11,6 +11,8 @@ excerpt: |
     — a space for second-order thinking, exploration, and connected ideas.
     Here, ideas don’t just accumulate — they interact.
 
+author_profile: true
+
 feature_row:
   - image_path: /assets/images/default.png
     alt: "Projects"
