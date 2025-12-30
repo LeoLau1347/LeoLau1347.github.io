@@ -2,6 +2,8 @@
 layout: splash
 classes: wide
 
+permalink: /
+
 title: ""
 header:
   overlay_image: /assets/images/default.png
