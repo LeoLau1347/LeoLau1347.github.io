@@ -1,8 +1,6 @@
 ---
 layout: single
-classes: wide
 
-title: "L² Space"
 header:
   overlay_image: /assets/images/default.png
   overlay_filter: 0.2
