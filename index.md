@@ -1,9 +1,10 @@
 ---
 layout: splash
+classes: wide
 
 title: "L² Space"
 header:
-  overlay_image: /assets/images/cover.png
+  overlay_image: /assets/images/default.png
   overlay_filter: 0.35
 excerpt: |
   L² stands for Learning Squared — a space for second-order thinking, exploration, and connected ideas.
