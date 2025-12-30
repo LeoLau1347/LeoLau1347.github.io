@@ -1,9 +1,49 @@
-remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+title: "L² Space"
+name: "Leo Lau"
+description: "L² — Learning, Squared."
+url: "https://leolau1347.github.io"
+baseurl: ""
 
+
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 plugins:
   - jekyll-include-cache
 
 
-title: "L² Open Notes"
-author: "LeoLau1347"
-description: "A personal blog."
+author:
+  name: "Leo Lau"
+  avatar: "/assets/imges/avatar.png"
+  bio: "PhD researcher · Physics · Computation"
+
+
+minimal_mistakes_skin: "dark"
+search: true
+breadcrumbs: true
+
+# 让 _pages 生效
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# 默认布局（文章用 single，页面用 single）
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# 导航
+nav: "main"
