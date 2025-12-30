@@ -1,17 +1,13 @@
 ---
-layout: single
+layout: splash
+classes: wide
 
 title: ""
-
 header:
   overlay_image: /assets/images/default.png
-  overlay_filter: 0.2
+  overlay_filter: 0.35
 excerpt: |
-    L² stands for Learning Squared
-    — a space for second-order thinking, exploration, and connected ideas.
-    Here, ideas don’t just accumulate — they interact.
-
-author_profile: true
+  L² stands for Learning Squared — a space for second-order thinking, exploration, and connected ideas. <\br> Here, ideas don’t just accumulate — they interact.
 
 feature_row:
   - image_path: /assets/images/default.png
