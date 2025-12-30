@@ -1,6 +1,8 @@
 ---
 layout: single
 
+title: ""
+
 header:
   overlay_image: /assets/images/default.png
   overlay_filter: 0.2
