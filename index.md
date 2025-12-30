@@ -4,9 +4,10 @@ classes: wide
 
 permalink: /
 
-page.title: ""
+title: "L² stands for Learning Squared"
 excerpt: |
-  L² stands for Learning Squared — a space for second-order thinking, exploration, and connected ideas. <\br> Here, ideas don’t just accumulate — they interact.
+  A space for second-order thinking, exploration, and connected ideas. \
+  Here, ideas don’t just accumulate — they interact.
 
 header:
   overlay_image: /assets/images/default.png
