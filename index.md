@@ -6,14 +6,14 @@ permalink: /
 
 title: " "
 excerpt: |
-  L² stands for Learning Squared —— \
-  a space for second-order thinking, exploration, and connected ideas. \
+  L² stands for Learning Squared —\
+  a space for second-order thinking, exploration, and ideation. \
   \
   Here, ideas don’t just accumulate — they interact.
 
 header:
   overlay_image: /assets/images/cover.png
-  overlay_filter: 0.35
+  overlay_filter: 0.25
 
 
 author_profile: true
