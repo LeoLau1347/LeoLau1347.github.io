@@ -1,0 +1,9 @@
+main:
+  - title: "Thinking"
+    url: /thinking/
+  - title: "Research"
+    url: /research/
+  - title: "Tools"
+    url: /tools/
+  - title: "About"
+    url: /about/
