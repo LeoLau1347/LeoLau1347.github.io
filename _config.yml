@@ -13,7 +13,9 @@ plugins:
 author:
   name: "Leo Lau"
   avatar: "/assets/images/avatar.png"
-  bio: "Researcher · Physics · Computation"
+  bio: |
+    PhD Researcher \ 
+    Physics · Computation
 
 
 minimal_mistakes_skin: "default"
