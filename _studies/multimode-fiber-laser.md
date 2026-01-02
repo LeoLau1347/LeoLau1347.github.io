@@ -1,7 +1,6 @@
 ---
 title: "Multimode Fiber Laser Dynamics"
 excerpt: "Spatiotemporal mode coupling and nonlinear self-organization in multimode fiber lasers."
-
 date: 2021-01-01
 
 categories:

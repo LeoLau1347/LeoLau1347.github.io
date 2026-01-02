@@ -61,6 +61,7 @@ defaults:
       type: studies
     values:
       layout: single
+      classes: wide
       author_profile: false
       read_time: true
       comments: false
@@ -72,6 +73,7 @@ defaults:
       type: tools
     values:
       layout: single
+      classes: wide
       author_profile: false
       read_time: true
       comments: false
