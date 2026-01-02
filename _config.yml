@@ -20,7 +20,11 @@ author:
 
 minimal_mistakes_skin: "default"
 search: true
-breadcrumbs: true
+breadcrumbs: false
+
+
+include:
+  - "_pages"
 
 
 collections:
@@ -73,5 +77,6 @@ defaults:
       comments: false
       share: false
       related: false
+
 
 nav: "main"
