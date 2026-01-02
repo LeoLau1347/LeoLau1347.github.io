@@ -4,7 +4,7 @@ excerpt: "Spatiotemporal mode coupling and nonlinear self-organization in multim
 
 date: 2021-01-01
 
-categories:
+field:
   - STML
 tags:
   - physics
