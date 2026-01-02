@@ -7,7 +7,7 @@ title: "All Studies"
 author_profile: true
 ---
 
-{% assign grouped = site.studies | group_by: "field" %}
+{% assign grouped = site.studies | group_by: "group" %}
 
 {% capture written_label %}None{% endcapture %}
 
