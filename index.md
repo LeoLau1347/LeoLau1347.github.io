@@ -12,7 +12,7 @@ excerpt: |
   Here, ideas don’t just accumulate — they interact.
 
 header:
-  overlay_image: /assets/images/cover1.png
+  overlay_image: /assets/images/cover.png
   overlay_filter: 0.25
 
 author_profile: true
