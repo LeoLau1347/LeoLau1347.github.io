@@ -4,8 +4,7 @@ excerpt: "Spatiotemporal mode coupling and nonlinear self-organization in multim
 
 date: 2021-01-01
 
-field:
-  - STML
+field: ST
 
 sidebar:
   - title: "Multimode Fiber Laser Dynamics"
@@ -23,4 +22,5 @@ Unlike conventional single-mode lasers, multimode operation does not merely intr
 The observed laser states correspond to **attractors in a high-dimensional spatiotemporal dynamical system**, rather than isolated steady states.
 
 A central hypothesis of this study is that many experimentally observed multimode laser regimes can be understood as **low-dimensional emergent dynamics** arising from strong mode coupling, rather than as independent modal oscillations.
+
 
