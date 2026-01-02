@@ -31,8 +31,6 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-include:
-  - _pages
 
 defaults:
   # Posts (Thinking)  
@@ -75,6 +73,5 @@ defaults:
       comments: false
       share: false
       related: false
-
 
 nav: "main"
