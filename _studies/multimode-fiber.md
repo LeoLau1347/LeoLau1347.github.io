@@ -1,13 +1,16 @@
 ---
 title: "Multimode Fiber"
 excerpt: "Spatiotemporal mode coupling and nonlinear self-organization in multimode fiber lasers."
+
 date: 2020-12-01
 
-field:
-  - STML
-tags:
-  - physics
-  - ongoing
+field: STML
+
+sidebar:
+  - title: "Multimode Fiber"
+    image: "/assets/images/page_figures/field_STML.png"
+    image_alt: "page image"
+    text: "physics · ongoing"
 ---
 
 ## Physical Perspective
