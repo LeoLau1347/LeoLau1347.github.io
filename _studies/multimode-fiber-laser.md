@@ -7,14 +7,11 @@ date: 2021-01-01
 field:
   - STML
 
-keywords:
-  - physics
-  - ongoing
-
 sidebar:
   - title: "Multimode Fiber Laser Dynamics"
     image: "/assets/images/page_figures/field_STML.png"
     image_alt: "page image"
+    text: physics | ongoing
 ---
 
 ## Physical Perspective
