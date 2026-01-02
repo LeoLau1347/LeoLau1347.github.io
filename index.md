@@ -15,31 +15,32 @@ header:
   overlay_image: /assets/images/cover.png
   overlay_filter: 0.25
 
-
 author_profile: true
 
 feature_row:
   - image_path: /assets/images/default.png
-    alt: "Projects"
-    title: "Projects"
-    excerpt: "PIC / Maxwell / simulation projects and showcases."
-    url: /projects/
-    btn_label: "View Projects"
+    alt: "THe 1st academic tool"
+    title: "1st Tool"
+    excerpt: "The 1st useful tool I am actively using and maintaining."
+    url: /tools/
+    btn_label: "More"
     btn_class: "btn--primary"
+
   - image_path: /assets/images/default.png
-    alt: "Tutorials"
-    title: "Tutorials"
-    excerpt: "Step-by-step guides and reproducible workflows."
-    url: /tutorials/
-    btn_label: "Read Tutorials"
+    alt: "The 2nd academic tool"
+    title: "2nd Tool"
+    excerpt: "The 2nd useful tool I am actively using and maintaining."
+    url: /tools/
+    btn_label: "More"
     btn_class: "btn--primary"
+
   - image_path: /assets/images/default.png
-    alt: "Notes"
-    title: "Notes"
-    excerpt: "Short notes, derivations, and ideas."
-    url: /notes/
-    btn_label: "Browse Notes"
-    btn_class: "btn--primary"
+    alt: "The main research"
+    title: "Main Research"
+    excerpt: "The main research direction I am actively working."
+    url: /research/
+    btn_label: "More"
+    btn_class: "btn--outline"
 ---
 
 {% include feature_row %}
