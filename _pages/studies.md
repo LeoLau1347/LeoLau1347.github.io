@@ -8,15 +8,19 @@ collection: studies
 author_profile: true
 ---
 
-{% assign studies = site.collections.studies.docs | sort: "date" %}
-{% assign grouped = studies | group_by: "categories" %}
+{% capture written_label %}'None'{% endcapture %}
 
-{% for group in grouped %}
-## {{ group.name | capitalize }}
-
-{% assign items = group.items | reverse %}
-{% for item in items %}
-- **{{ item.date | date: "%Y-%m-%d" }}**
-  [{{ item.title }}]({{ item.url }})
-{% endfor %}
+{% for collection in site.collections %}
+  {% unless collection.output == false or collection.label == "posts" %}
+    {% capture label %}{{ collection.label }}{% endcapture %}
+    {% if label != written_label %}
+      <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
+      {% capture written_label %}{{ label }}{% endcapture %}
+    {% endif %}
+  {% endunless %}
+  {% for post in collection.docs %}
+    {% unless collection.output == false or collection.label == "posts" %}
+      {% include archive-single.html %}
+    {% endunless %}
+  {% endfor %}
 {% endfor %}
