@@ -40,7 +40,7 @@ feature_row:
     excerpt: "The main research direction I am actively working."
     url: /research/
     btn_label: "More"
-    btn_class: "btn--outline"
+    btn_class: "btn--inverse"
 ---
 
 {% include feature_row %}
