@@ -11,7 +11,7 @@ sidebar:
   - title: "Multimode Fiber Laser Dynamics"
     image: "/assets/images/page_figures/field_STML.png"
     image_alt: "page image"
-    text: physics | ongoing
+    text: " physics | ongoing "
 ---
 
 ## Physical Perspective
