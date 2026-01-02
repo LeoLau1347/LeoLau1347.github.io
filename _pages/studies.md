@@ -4,11 +4,9 @@ layout: archive
 permalink: /studies/
 
 title: "All Studies"
-collection: studies
 author_profile: true
 ---
 
-{% assign docs = site.studies %}
 {% assign grouped = site.studies | group_by: "field" %}
 
 {% capture written_label %}None{% endcapture %}
@@ -20,6 +18,11 @@ author_profile: true
 <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
 {% capture written_label %}{{ label }}{% endcapture %}
 {% endif %}
+
+<p>
+field = "{{ group.name }}",
+size = {{ group.items | size }}
+</p>
 
 {% assign items = group.items | sort: "date" | reverse %}
 {% for item in items %}
