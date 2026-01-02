@@ -8,6 +8,7 @@ collection: studies
 author_profile: true
 ---
 
-{% for d in site.studies %}
+{% assign docs = site.studies | sort: "date" | reverse %}
+{% for d in docs %}
 - {{ d.title }}
 {% endfor %}
