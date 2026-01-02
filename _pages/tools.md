@@ -1,10 +1,11 @@
 ---
 layout: collection
 
+permalink: /tools/
+
 title: "All Tools"
 collection: tools
-permalink: /tools/
-author_profile: false
+author_profile: true
 
 sort_by: date
 sort_order: reverse

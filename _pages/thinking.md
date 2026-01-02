@@ -1,7 +1,8 @@
 ---
 layout: posts
 
-title: "All Thinking"
 permalink: /thinking/
+
+title: "All Thinking"
 author_profile: true
 ---

@@ -1,10 +1,7 @@
 ---
 title: "Test: Hello World"
-categories:
-  - Test
-tags:
-  - content
-  - testing
+categories: [Test]
+tags: [content, testing]
 ---
 
 Hello world! :)
