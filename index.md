@@ -35,10 +35,10 @@ feature_row:
     btn_class: "btn--primary"
 
   - image_path: /assets/images/default.png
-    alt: "The main research"
-    title: "Main Research"
-    excerpt: "The main research direction I am actively working."
-    url: /research/
+    alt: "The main study"
+    title: "Main Study"
+    excerpt: "The main study direction I am actively working."
+    url: /studies/
     btn_label: "More"
     btn_class: "btn--inverse"
 ---

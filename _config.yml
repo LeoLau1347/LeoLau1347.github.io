@@ -24,9 +24,12 @@ breadcrumbs: true
 
 
 collections:
-  pages:
+  studies:
     output: true
-    permalink: /:path/
+    permalink: /:collection/:path/
+  tools:
+    output: true
+    permalink: /:collection/:path/
 
 
 defaults:
@@ -46,6 +49,30 @@ defaults:
     values:
       layout: single
       author_profile: true
+      read_time: false
+      comments: false
+      share: false
+      related: false
+  - scope:
+      path: ""
+      type: studies
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false 
+  - scope:
+      path: ""
+      type: tools
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
 
 
 nav: "main"
