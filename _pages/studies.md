@@ -19,12 +19,8 @@ author_profile: true
 {% capture written_label %}{{ label }}{% endcapture %}
 {% endif %}
 
-<p>
-field = "{{ group.name }}",
-size = {{ group.items | size }}
-</p>
-
 {% assign posts = group.items | sort: "date" | reverse %}
+
 {% for post in posts %}
 {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
