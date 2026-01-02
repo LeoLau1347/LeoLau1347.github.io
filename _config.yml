@@ -43,6 +43,7 @@ defaults:
       type: posts
     values:
       layout: single
+      permalink: /thinking/:title/
       author_profile: true
       read_time: true
       comments: false
@@ -61,7 +62,6 @@ defaults:
       type: studies
     values:
       layout: single
-      classes: wide
       author_profile: false
       read_time: true
       comments: false
@@ -73,7 +73,6 @@ defaults:
       type: tools
     values:
       layout: single
-      classes: wide
       author_profile: false
       read_time: true
       comments: false
