@@ -31,6 +31,8 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+include:
+  - _pages
 
 defaults:
   # Posts (Thinking)  
