@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: archive
 
 permalink: /studies/
 
@@ -8,8 +8,8 @@ collection: studies
 author_profile: true
 ---
 
-{% assign docs = site.studies | sort: "date" | reverse %}
-{% assign grouped = docs | group_by: "field" %}
+{% assign docs = site.studies %}
+{% assign grouped = site.studies | group_by: "field" %}
 
 {% capture written_label %}None{% endcapture %}
 
