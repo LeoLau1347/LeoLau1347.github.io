@@ -24,8 +24,8 @@ field = "{{ group.name }}",
 size = {{ group.items | size }}
 </p>
 
-{% assign items = group.items | sort: "date" | reverse %}
-{% for item in items %}
-{% include archive-single.html post=item type=page.entries_layout %}
+{% assign posts = group.items | sort: "date" | reverse %}
+{% for post in posts %}
+{% include archive-single.html type=page.entries_layout %}
 {% endfor %}
 {% endfor %}
