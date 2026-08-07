@@ -23,7 +23,7 @@ fields:
   - name: "message"
     label: "Message"
     type: "textarea"
-    rows: 3
+    rows: 1
     max_words: 30
     required: true
 
