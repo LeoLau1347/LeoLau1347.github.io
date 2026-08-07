@@ -13,16 +13,17 @@
   margin: 0 auto 2rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid $border-color;
+  font-size: 0.8rem;
 }
 
 .contact-form__title {
-  margin: 0 0 0.75rem;
-  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
 }
 
 .contact-form label:not(.contact-form__consent) {
   display: block;
-  margin: 0.6rem 0 0.2rem;
+  margin: 0.35rem 0 0.15rem;
   font-weight: 600;
 }
 
@@ -30,7 +31,7 @@
 .contact-form textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 0.45rem;
+  padding: 0.3rem 0.4rem;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   background: $background-color;
@@ -44,16 +45,17 @@
 
 .contact-form__help {
   display: block;
-  margin-top: 0.15rem;
+  margin-top: 0.1rem;
   color: $muted-text-color;
+  font-size: 0.7rem;
   text-align: right;
 }
 
 .contact-form__consent {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.3rem;
   align-items: flex-start;
-  margin: 0.8rem 0;
+  margin: 0.55rem 0;
   line-height: 1.35;
 }
 
