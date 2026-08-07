@@ -1,4 +1,4 @@
----
+﻿---
 ---
 
 @charset "utf-8";
@@ -7,15 +7,15 @@
 @import "minimal-mistakes";
 
 .contact-form {
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid $border-color;
-  font-size: 0.75em;
+  max-width: 32rem;
+  margin: 0 auto 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $border-color;
 }
 
 .contact-form__title {
   margin: 0 0 0.75rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .contact-form label:not(.contact-form__consent) {
