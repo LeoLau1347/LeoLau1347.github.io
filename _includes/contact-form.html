@@ -1,0 +1,59 @@
+<section class="contact-form" aria-labelledby="contact-form-title">
+  <h2 id="contact-form-title" class="contact-form__title">Contact Me</h2>
+
+  <form action="https://formspree.io/f/xwlepgwl" method="POST" data-contact-form>
+    <label for="contact-name">Name</label>
+    <input id="contact-name" name="name" type="text" autocomplete="name" required>
+
+    <label for="contact-email">Email</label>
+    <input id="contact-email" name="email" type="email" autocomplete="email" required>
+
+    <label for="contact-phone">Phone</label>
+    <input id="contact-phone" name="phone" type="tel" autocomplete="tel" required>
+
+    <label for="contact-message">Message</label>
+    <textarea id="contact-message" name="message" rows="4" aria-describedby="contact-message-help" required data-message></textarea>
+    <small id="contact-message-help" class="contact-form__help">
+      <span data-word-count>0</span>/30 words
+    </small>
+
+    <label class="contact-form__consent">
+      <input name="consent" type="checkbox" value="yes" required>
+      <span>I agree to submit the information above.</span>
+    </label>
+
+    <input type="hidden" name="_language" value="en">
+    <input class="contact-form__gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+
+    <button class="btn btn--primary contact-form__submit" type="submit">Submit</button>
+  </form>
+</section>
+
+<script>
+  (() => {
+    const form = document.querySelector("[data-contact-form]");
+    if (!form) return;
+
+    const message = form.querySelector("[data-message]");
+    const counter = form.querySelector("[data-word-count]");
+    const maxWords = 30;
+    const countWords = (value) => value.trim() ? value.trim().split(/\s+/u).length : 0;
+
+    const validateMessage = () => {
+      const wordCount = countWords(message.value);
+      counter.textContent = wordCount;
+      message.setCustomValidity(
+        wordCount > maxWords ? `Please limit your message to ${maxWords} words.` : ""
+      );
+      return wordCount <= maxWords;
+    };
+
+    message.addEventListener("input", validateMessage);
+    form.addEventListener("submit", (event) => {
+      if (!validateMessage()) {
+        event.preventDefault();
+        message.reportValidity();
+      }
+    });
+  })();
+</script>

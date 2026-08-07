@@ -1,0 +1,70 @@
+---
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+.contact-form {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid $border-color;
+  font-size: 0.75em;
+}
+
+.contact-form__title {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.contact-form label:not(.contact-form__consent) {
+  display: block;
+  margin: 0.6rem 0 0.2rem;
+  font-weight: 600;
+}
+
+.contact-form input:not([type="checkbox"]),
+.contact-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.45rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: $background-color;
+  color: $text-color;
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form__help {
+  display: block;
+  margin-top: 0.15rem;
+  color: $muted-text-color;
+  text-align: right;
+}
+
+.contact-form__consent {
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-start;
+  margin: 0.8rem 0;
+  line-height: 1.35;
+}
+
+.contact-form__consent input {
+  flex: 0 0 auto;
+  margin-top: 0.15rem;
+}
+
+.contact-form__submit {
+  width: 100%;
+}
+
+.contact-form__gotcha {
+  position: absolute !important;
+  left: -9999px !important;
+}
