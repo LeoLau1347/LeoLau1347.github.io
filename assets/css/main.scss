@@ -7,6 +7,7 @@
 @import "minimal-mistakes";
 
 .contact-form {
+  box-sizing: border-box;
   width: 100%;
   max-width: 24rem;
   margin: 0 auto 2rem;
@@ -68,4 +69,33 @@
 .contact-form__gotcha {
   position: absolute !important;
   left: -9999px !important;
+}
+
+@include breakpoint($large) {
+  .page__footer footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 24rem;
+    column-gap: 3rem;
+    align-items: start;
+  }
+
+  .page__footer .contact-form {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin: 0;
+    padding: 0 0 0 2rem;
+    border-bottom: 0;
+    border-left: 1px solid $border-color;
+  }
+
+  .page__footer-follow {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .page__footer-copyright {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+  }
 }
