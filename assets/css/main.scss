@@ -98,7 +98,7 @@
   left: -9999px !important;
 }
 
-@include breakpoint($large) {
+@include breakpoint($medium) {
   .page__footer footer {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
