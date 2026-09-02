@@ -1,0 +1,51 @@
+{% assign contact = site.data.contact_form %}
+<details class="contact-panel">
+  <summary class="btn btn--primary contact-panel__trigger">{{ contact.button_label }}</summary>
+  <div class="contact-panel__dialog">
+    <section class="contact-form" aria-labelledby="contact-form-title">
+      <h2 id="contact-form-title" class="contact-form__title">{{ contact.title }}</h2>
+      <form action="{{ contact.endpoint }}" method="POST" data-contact-form>
+        {% for field in contact.fields %}
+          {% assign field_id = "contact-" | append: field.name %}
+          <label for="{{ field_id }}">{{ field.label }}</label>
+          {% if field.type == "textarea" %}
+            <textarea id="{{ field_id }}" name="{{ field.name }}" rows="{{ field.rows | default: 3 }}"{% if field.max_words %} aria-describedby="{{ field_id }}-help" data-message data-max-words="{{ field.max_words }}"{% endif %}{% if field.required %} required{% endif %}></textarea>
+            {% if field.max_words %}<small id="{{ field_id }}-help" class="contact-form__help"><span data-word-count>0</span>/{{ field.max_words }} words</small>{% endif %}
+          {% else %}
+            <input id="{{ field_id }}" name="{{ field.name }}" type="{{ field.type | default: 'text' }}"{% if field.autocomplete %} autocomplete="{{ field.autocomplete }}"{% endif %}{% if field.required %} required{% endif %}>
+          {% endif %}
+        {% endfor %}
+        <label class="contact-form__consent">
+          <input name="consent" type="checkbox" value="yes"{% if contact.consent.required %} required{% endif %}>
+          <span>{{ contact.consent.label }}</span>
+        </label>
+        <input type="hidden" name="_language" value="{{ contact.language | default: 'en' }}">
+        <input class="contact-form__gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        <button class="btn btn--primary contact-form__submit" type="submit">{{ contact.submit_label }}</button>
+      </form>
+    </section>
+  </div>
+</details>
+<script>
+  (() => {
+    const form = document.querySelector("[data-contact-form]");
+    if (!form) return;
+    const message = form.querySelector("[data-message]");
+    const counter = form.querySelector("[data-word-count]");
+    const maxWords = Number(message.dataset.maxWords);
+    const countWords = (value) => value.trim() ? value.trim().split(/\s+/u).length : 0;
+    const validateMessage = () => {
+      const wordCount = countWords(message.value);
+      counter.textContent = wordCount;
+      message.setCustomValidity(wordCount > maxWords ? `Please limit your message to ${maxWords} words.` : "");
+      return wordCount <= maxWords;
+    };
+    message.addEventListener("input", validateMessage);
+    form.addEventListener("submit", (event) => {
+      if (!validateMessage()) {
+        event.preventDefault();
+        message.reportValidity();
+      }
+    });
+  })();
+</script>

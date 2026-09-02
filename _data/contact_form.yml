@@ -1,0 +1,32 @@
+title: "Contact Me"
+button_label: "Contact Me"
+submit_label: "Submit"
+endpoint: "https://formspree.io/f/xwlepgwl"
+language: "en"
+
+fields:
+  - name: "name"
+    label: "Name"
+    type: "text"
+    autocomplete: "name"
+    required: true
+  - name: "email"
+    label: "Email"
+    type: "email"
+    autocomplete: "email"
+    required: true
+  - name: "phone"
+    label: "Phone"
+    type: "tel"
+    autocomplete: "tel"
+    required: true
+  - name: "message"
+    label: "Message"
+    type: "textarea"
+    rows: 1
+    max_words: 30
+    required: true
+
+consent:
+  label: "I agree to submit the information above."
+  required: true

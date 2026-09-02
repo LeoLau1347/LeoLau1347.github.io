@@ -1,0 +1,128 @@
+---
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+.contact-panel {
+  position: relative;
+  margin-left: auto;
+}
+
+.contact-panel__trigger {
+  list-style: none;
+  cursor: pointer;
+}
+
+.contact-panel__trigger::-webkit-details-marker {
+  display: none;
+}
+
+.contact-panel__dialog {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 0.75rem);
+  z-index: 10;
+  box-sizing: border-box;
+  width: min(24rem, calc(100vw - 2rem));
+  padding: 1rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: $background-color;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.16);
+}
+.contact-form {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 24rem;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.contact-form__title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.contact-form label:not(.contact-form__consent) {
+  display: block;
+  margin: 0.35rem 0 0.15rem;
+  font-weight: 600;
+}
+
+.contact-form input:not([type="checkbox"]),
+.contact-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3rem 0.4rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: $background-color;
+  color: $text-color;
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form__help {
+  display: block;
+  margin-top: 0.1rem;
+  color: $muted-text-color;
+  font-size: 0.7rem;
+  text-align: right;
+}
+
+.contact-form__consent {
+  display: flex;
+  gap: 0.3rem;
+  align-items: flex-start;
+  margin: 0.55rem 0;
+  line-height: 1.35;
+}
+
+.contact-form__consent input {
+  flex: 0 0 auto;
+  margin-top: 0.15rem;
+}
+
+.contact-form__submit {
+  width: 100%;
+}
+
+.contact-form__gotcha {
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+@include breakpoint($medium) {
+  .page__footer footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    column-gap: 2rem;
+    row-gap: 0.35rem;
+    align-items: start;
+    align-content: start;
+  }
+
+  .page__footer .contact-panel {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin: 0;
+  }
+
+  .page__footer-follow {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .page__footer-copyright {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+  }
+}
